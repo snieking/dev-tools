@@ -1,0 +1,13 @@
+# Example docker-compose.yml using the custom image
+version: "3"
+
+services:
+  mssql:
+    build: /Users/viktorplane/dev-tools/docker/mssql
+    ports: 
+      - 1433:1433
+    environment: 
+      SA_PASSWORD: P@ssw0rd
+    volumes:
+      # All the SQL scripts in '/usr/src/app/scripts' will be executed after start-up
+      - ./scripts:/usr/src/app/scripts
