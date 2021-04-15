@@ -6,7 +6,7 @@ alias .....="cd ../../../.."
 
 # SSH
 alias capchapssh="cp ~/Documents/ssh-keys/capchap/id_* ~/.ssh/."
-alias chromawayssh="cp ~/Documents/ssh-keys/id_* ~/.ssh/."
+alias chromawayssh="cp ~/Documents/ssh-keys/chromaway/id_* ~/.ssh/."
 
 # Docker
 alias rsdocker="docker-compose down && sleep 3 && docker-compose up -d --build"
